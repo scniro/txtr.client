@@ -1,0 +1,25 @@
+<div class="banner">
+    <h1 class="stitched">txtr</h1>
+</div>
+
+<div class="content">
+
+    <h2>currently dishing up corny yo mama jokes</h2>
+
+    <form novalidate name="homeCtrl.textForm" class="stitched-down">
+        <input required
+               type="tel"
+               placeholder="enter a phone number"
+               ng-model="homeCtrl.target"/>
+
+        <button ng-click="homeCtrl.send(homeCtrl.target)">send</button>
+    </form>
+</div>
+
+<div class="community">
+    <a href="" target="_blank">
+        <i class="fa fa-github"></i>
+    </a>
+</div>
+
+<span us-spinner spinner-key="spinner"></span>

@@ -1,0 +1,118 @@
+body {
+    min-width: 500px;
+}
+
+.main {
+    h1 {
+        font-family: 'Lobster', cursive;
+        font-size: 12em;
+        text-shadow: 0.250em 0.250em #8d9eb3;
+        text-align: center;
+        color: white;
+    }
+
+    h2 {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.25em;
+        padding: 1.25em 0;
+        font-weight: lighter;
+        color: #808e8d;
+    }
+
+    div.banner {
+        margin: 6em auto 0 auto;
+        width: 24em;
+    }
+
+    div.content {
+        margin: 0 auto;
+        width: 24em;
+    }
+
+    .stitched {
+        padding: 20px;
+        margin: 10px;
+        background: #5ed498;
+        font-weight: bold;
+        line-height: 1.3em;
+        border: 2px dashed #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 0 4px #5ed498, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+        text-shadow: -1px -1px #8d9eb3;
+        font-weight: normal;
+    }
+
+    form {
+        padding: 6px;
+
+        input {
+            margin-bottom: 1em;
+        }
+
+        button {
+            cursor: pointer;
+            border: solid 1px #ddd;
+            background-color: #ddd;
+            color: #808e8d;
+            font-size: 1.25em;
+
+            &:hover {
+                border: solid 1px #e4e4e4;
+                background-color: #e4e4e4;
+            }
+        }
+
+        input, button {
+            border-radius: 10px;
+            width: 100%;
+            outline: none;
+            padding: 1em;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            border: solid 1px #ccc;
+        }
+    }
+
+    .community {
+
+        width: 100%;
+        text-align: center;
+        padding-top: 1em;
+        color: dodgerblue;
+
+        a {
+            color: inherit;
+        }
+
+        i {
+            font-size: 4em;
+        }
+    }
+}
+
+@mixin placeholder {
+    ::-webkit-input-placeholder {@content}
+    :-moz-placeholder           {@content}
+    ::-moz-placeholder          {@content}
+    :-ms-input-placeholder      {@content}
+}
+
+@include placeholder {
+    font-style:italic;
+}
+
+
+
+
+
+
+
+
+
+
+
+

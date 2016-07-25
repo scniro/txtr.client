@@ -1,0 +1,21 @@
+{
+  "name": "txtr",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Sal Niro <salvatore.niro@outlook.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "ngSweetAlert": "angular-sweetalert#^1.1.0",
+    "angular-spinner": "^0.8.1"
+  }
+}
