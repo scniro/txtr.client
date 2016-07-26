@@ -7,6 +7,7 @@ var uglify = require('gulp-uglify');
 var concat = require('gulp-concat');
 var cleanCSS = require('gulp-clean-css');
 var angularFilesort = require('gulp-angular-filesort');
+var Server = require('karma').Server;
 
 gulp.task('localhost', function () {
     nodemon({
@@ -83,4 +84,11 @@ gulp.task('watch:css', function () {
 
 gulp.task('watch:js', function () {
     gulp.watch('js/src/**/*.js', ['package:js:src']);
+});
+
+gulp.task('test', function (done) {
+    new Server({
+        configFile: __dirname + '/karma.conf.js',
+        singleRun: true
+    }, done).start();
 });

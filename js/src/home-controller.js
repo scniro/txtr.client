@@ -8,11 +8,12 @@ angular.module('app').controller('homeCtrl', ['$scope', 'txtrFactory', 'SweetAle
 
             SweetAlert.swal('oops!', 'this form is invalid', 'warning');
         } else {
-
-            txtrFactory.send(target).then(function (response) {
+            return txtrFactory.send(target).then(function (response) {
                 SweetAlert.swal('Damn dude!', response.data, 'success');
+                return response;
             }, function (response) {
                 SweetAlert.swal('oops!', response.data.Message, 'warning');
+                return response;
             });
         }
     }

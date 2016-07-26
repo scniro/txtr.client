@@ -16,6 +16,8 @@
   ],
   "dependencies": {
     "ngSweetAlert": "angular-sweetalert#^1.1.0",
-    "angular-spinner": "^0.8.1"
+    "angular-spinner": "^0.8.1",
+    "angular-mocks": "^1.5.8",
+    "angular-ui-router": "ui-router#^0.3.1"
   }
 }
